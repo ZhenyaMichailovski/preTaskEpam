@@ -6,7 +6,11 @@ namespace preTask
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Euclidean euclidean = new Euclidean();
+            var startTimeForEuclid = System.Diagnostics.Stopwatch.StartNew();
+            var items = euclidean.FindGDC(1568, 1352, ref startTimeForEuclid);
+            
+           
         }
     }
 }
